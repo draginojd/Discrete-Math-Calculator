@@ -5,7 +5,17 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    
 	<div class="calculator">
+        <select id="operation">
+            <option value="cartesian-product">Cartesian Product</option>
+            <option value="union">Set Union</option>
+            <option value="intersection">Set Intersection</option>
+            <option value="complement">Set Complement</option>
+            <option value="permutations">Permutations</option>
+            <option value="combinations">Combinations</option>
+            <option value="normal">Normal Calculator</option>
+          </select>
 		<h2>Cartesian Product Calculator</h2>
 		<label for="set">Set:</label>
 		<input type="text" id="set" placeholder="Enter comma-separated values">
@@ -36,7 +46,7 @@
         <tr>
           <td><button onclick="appendToDisplay('0')">0</button></td>
           <td><button onclick="appendToDisplay('.')">.</button></td>
-          <td><button onclick="calculate()">=</button></td>
+          <td><button onclick="appendToDisplay('=')" onclick="preformAddition()">=</button></td>
           <td><button onclick="appendToDisplay('+')">+</button></td>
         </tr>
         <tr>

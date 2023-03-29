@@ -51,3 +51,27 @@
     return result;
   }
   
+  
+function appendToDisplay(value) {
+    document.getElementById("set").value += value;
+  }
+  
+  function clearDisplay() {
+    document.getElementById("set").value = "";
+  }
+
+  function performAddition() {
+    var input = document.getElementById("set").value;
+  
+    // Split the input string into two numbers
+    var numbers = input.split(",");
+    var a = Number(numbers[0]);
+    var b = Number(numbers[1]);
+  
+    // Perform addition
+    var result = addition(a, b);
+  
+    // Display the result in the result div
+    document.getElementById("result").innerHTML = "Addition: " + result;
+  }
+  
