@@ -11,6 +11,7 @@ body{
     border-bottom-right-radius: 2em;
 	text-align: center;
 	width: 22vw;
+    height: 20vh;
 	margin: auto;
 }
 
@@ -22,6 +23,7 @@ body{
     border-bottom-right-radius: 2em;
 	text-align: center;
 	width: 22vw;
+    height: 18vh;
 	margin: auto;
 }
 
@@ -39,8 +41,8 @@ input[type=text] {
 }
 
 button {
-	padding: 10px;
-	margin: 5px;
+	padding: 2vw;
+	margin: 0.7vh;
 	border-radius: 5px;
 	border: none;
 	background-color: #4CAF50;
@@ -50,7 +52,8 @@ button {
 }
 
 table{
-margin-left: 45vw;
+    margin-top: 2vh;
+margin-left: 39vw;
 
 }
 
