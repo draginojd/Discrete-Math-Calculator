@@ -1,3 +1,40 @@
+  const calculateButton = document.getElementById("calculate-button");
+  const operationSelect = document.getElementById("operation");
+  
+  calculateButton.addEventListener("click", function() {
+    const operation = operationSelect.value;
+
+    switch (operation) {
+      case "show-elements-of-a-set":
+        // Call the function to show elements of a set
+        break;
+      case "axiom-of-extension":
+        // Call the function to calculate the axiom of extension and cardinal number of a set
+        break;
+      case "union":
+        // Call the function to calculate the union of two sets
+        break;
+      case "intersection":
+        // Call the function to calculate the intersection of two sets
+        break;
+      case "cartesian-product":
+        // Call the function to calculate the Cartesian product of two sets
+        calculateCartesianProduct();
+        break;
+      case "complement":
+        // Call the function to calculate the complement of a set
+        break;
+      case "permutations":
+        // Call the function to calculate permutations
+        break;
+      case "combinations":
+        // Call the function to calculate combinations
+        break;
+      case "normal":
+        // Call the function to perform normal calculator operations
+        break;
+    }
+  });
 
   function calculateCartesianProduct() {
     let input = document.getElementById("set").value;
