@@ -2,8 +2,8 @@
   function calculateCartesianProduct() {
     var input = document.getElementById("set").value;
     
-    if (!input.includes(", ")) {
-      alert("Please enter two sets separated by a comma and a space (e.g. '{1, 5}, {1, 2}')");
+    if (!input.includes(" , ")) {
+      alert("Please enter two sets separated by a comma and a space (e.g. '{1, 5} , {1, 2}')");
       return;
     }
     

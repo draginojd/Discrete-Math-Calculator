@@ -8,17 +8,19 @@
     <div class="cal-form">
 	<div class="calculator">
         <select id="operation">
-            <option value="cartesian-product">Cartesian Product</option>
-            <option value="union">Set Union</option>
-            <option value="intersection">Set Intersection</option>
+          <option selected disabled class="selected-disabled">Set Theory</option>
+          <option value="union">Set Union</option>
+          <option value="intersection">Set Intersection</option>
+          <option value="cartesian-product">Cartesian Product</option>
             <option value="complement">Set Complement</option>
             <option value="permutations">Permutations</option>
             <option value="combinations">Combinations</option>
+            <option selected disabled class="selected-disabled">Classic Calculator</option>
             <option value="normal">Normal Calculator</option>
           </select>
 		<h2>Cartesian Product Calculator</h2>
 		<label for="set">Set:</label>
-		<input type="text" id="set" placeholder="Enter comma-separated values">
+		<input type="text" id="set" placeholder="Enter comma-separated values" class="inputfield">
 		<button class="calculate-button" onclick="calculateCartesianProduct()">Calculate</button>
 		<div id="result"></div>
 	</div>
