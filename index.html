@@ -5,19 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
     <div class="cal-form">
 	<div class="calculator">
         <select id="operation">
           <option selected disabled class="selected-disabled">Set Theory</option>
+          <option value="show-elements-of-a-set">Show elements of a set/is not a set</option>
+          <option value="axiom-of-extension">Axiom of extension & Cardinal number of a set</option>
           <option value="union">Set Union</option>
           <option value="intersection">Set Intersection</option>
-          <option value="cartesian-product">Cartesian Product</option>
+          <option value="cartesian-product" onclick="calculateCartesianProduct()" id="cartesian-product">Cartesian Product</option>
             <option value="complement">Set Complement</option>
             <option value="permutations">Permutations</option>
             <option value="combinations">Combinations</option>
             <option selected disabled class="selected-disabled">Classic Calculator</option>
             <option value="normal">Normal Calculator</option>
           </select>
+
 		<h2>Cartesian Product Calculator</h2>
 		<label for="set">Set:</label>
 		<input type="text" id="set" placeholder="Enter comma-separated values" class="inputfield">

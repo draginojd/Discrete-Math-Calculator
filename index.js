@@ -1,19 +1,19 @@
 
   function calculateCartesianProduct() {
-    var input = document.getElementById("set").value;
+    let input = document.getElementById("set").value;
     
     if (!input.includes(" , ")) {
       alert("Please enter two sets separated by a comma and a space (e.g. '{1, 5} , {1, 2}')");
       return;
     }
     
-    var sets = input.split(", ");
-    var setA = sets[0].trim().replace("{", "").replace("}", "").split(",");
-    var setB = sets[1].trim().replace("{", "").replace("}", "").split(",");
-    var cartesianProduct = [];
+    let sets = input.split(", ");
+    let setA = sets[0].trim().replace("{", "").replace("}", "").split(",");
+    let setB = sets[1].trim().replace("{", "").replace("}", "").split(",");
+    let cartesianProduct = [];
   
-    for (var i = 0; i < setA.length; i++) {
-      for (var j = 0; j < setB.length; j++) {
+    for (let i = 0; i < setA.length; i++) {
+      for (let j = 0; j < setB.length; j++) {
         cartesianProduct.push("(" + setA[i] + ", " + setB[j] + ")");
       }
     }
@@ -23,9 +23,9 @@
   
   
   function removeInnerBrackets(arr) {
-    var result = [];
-    for (var i = 0; i < arr.length; i++) {
-      var str = arr[i];
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      let str = arr[i];
       str = str.replace("{", "");
       str = str.replace("}", "");
       str = str.replace("{", "");
@@ -45,15 +45,15 @@
   }
   
   function performAddition() {
-    var input = document.getElementById("set").value;
+    let input = document.getElementById("set").value;
   
     // Split the input string into two numbers
-    var numbers = input.split(",");
-    var a = Number(numbers[0]);
-    var b = Number(numbers[1]);
+    let numbers = input.split(",");
+    let a = Number(numbers[0]);
+    let b = Number(numbers[1]);
   
     // Perform addition
-    var result = addition(a, b);
+    let result = addition(a, b);
   
     // Display the result in the result div
     document.getElementById("result").innerHTML = "Addition: " + result;
