@@ -53,6 +53,7 @@ input[type=text] {
 	border: none;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px #ddd;
+	
 }
 
 .button-1,.button-2,.button-3,.button-4,.button-5,.button-6,.button-7,.button-8,.button-9,.button-0,.button-minus,.button-star,.button-equal,.button-dot, .button-plus, .button-division, .clear-button{
