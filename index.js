@@ -7,12 +7,15 @@
     switch (operation) {
       case "show-elements-of-a-set":
         // Call the function to show elements of a set
+        document.title = "Show elements of a set";
         showElementsOfASet();
         break;
       case "axiom-of-extension":
+        h2Element.innerText = "Axiom of extension and cardinal number of a set"
         // Call the function to calculate the axiom of extension and cardinal number of a set
         break;
       case "union":
+        h2Element.innerText = "Union of two sets"
         // Call the function to calculate the union of two sets
         break;
       case "intersection":
