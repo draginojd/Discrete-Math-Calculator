@@ -7,6 +7,7 @@
     switch (operation) {
       case "show-elements-of-a-set":
         // Call the function to show elements of a set
+        showElementsOfASet();
         break;
       case "axiom-of-extension":
         // Call the function to calculate the axiom of extension and cardinal number of a set
@@ -36,6 +37,24 @@
     }
   });
 
+
+  function showElementsOfASet() {
+    let input = document.getElementById("set").value;
+    
+    let totalSet = input.split("= ");
+    let setName = totalSet[0].trim();
+    let set = totalSet[1].trim().replace("{", "").replace("}", "").split(",");
+    let showElementsOfASet = [];
+
+    for(let i = 0; i < set.length; i++)  {
+    showElementsOfASet.push(set[i].trim());
+    }
+    
+    document.getElementById("result").innerHTML = "Set name: " + setName + "<br>" + "Elements: " + showElementsOfASet.join(" , ");
+
+  }
+
+
   function calculateCartesianProduct() {
     let input = document.getElementById("set").value;
     
@@ -44,7 +63,8 @@
       return;
     }
     
-    let sets = input.split(", ");
+    //input -> sets -> setA -> setB -> cartesianProduct
+    let sets = input.split(", "); //spliting the input variable into an
     let setA = sets[0].trim().replace("{", "").replace("}", "").split(",");
     let setB = sets[1].trim().replace("{", "").replace("}", "").split(",");
     let cartesianProduct = [];
