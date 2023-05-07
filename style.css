@@ -18,7 +18,7 @@ title{
 	width: 95vw;
 	margin: auto;
     color: white;
-	box-shadow: 0 0px 1vh 0 rgba(64, 200, 49, 0.596);
+	box-shadow: 0 0px 1vh 0 #e0a930;
     margin-bottom: -10vh;
     
 }
@@ -55,30 +55,42 @@ input[type=text] {
 	border: none;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px #ddd;
-	
 }
 
 .button-1,.button-2,.button-3,.button-4,.button-5,.button-6,.button-7,.button-8,.button-9,.button-0,.button-minus,.button-star,.button-equal,.button-dot, .button-plus, .button-division, .clear-button{
     padding: 2vw;
-	margin: 1.7vh;
+	margin: 1.0vh;
 	border-radius: 5px;
 	border-style: none;
-	background-color: #4CAF50;
+	background-color: #e0a930; /* green #4CAF50*/
 	color: #fff;
 	font-weight: bold;
 	cursor: pointer;
     /*border-style: solid;*/
     transition: ease-in 0.2s;
     box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
-   
 }
 
 
-.button-1:hover,.button-2:hover,.button-3:hover,.button-4:hover,.button-5:hover,.button-6:hover,.button-7:hover,.button-8:hover,.button-9:hover,.button-0:hover,.button-minus:hover,.button-star:hover,.button-equal:hover,.button-dot:hover, .button-plus:hover, .button-division:hover{
-   transform: 100px 0px 0px 0px;
+.button-minus:hover,.button-star:hover,.button-equal:hover,.button-dot:hover, .button-plus:hover, .button-division:hover{
+  	transform: 100vw 0px 0px 0px;
+	background-color: #a77e26ea;
+	box-shadow: inset 0 2vh 1vw 0 rgba(255, 255, 255, 0.26);
+
+}
+
+.button-1,.button-2,.button-3,.button-4,.button-5,.button-6,.button-7,.button-8,.button-9,.button-0{
+	transform: 100px 0px 0px 0px;
+	background-color: #b3b0b0;
+	box-shadow: inset 0 2vh 1vw 0 rgba(255, 255, 255, 0.26);
+    padding: 1.9vw;
+}
+
+.button-1:hover,.button-2:hover,.button-3:hover,.button-4:hover,.button-5:hover,.button-6:hover,.button-7:hover,.button-8:hover,.button-9:hover,.button-0:hover{
+	transform: 100px 0px 0px 0px;
 	background-color: #707070;
 	box-shadow: inset 0 1vh 1vw 0 rgba(255, 255, 255, 0.26);
-    padding: 1.9vw;
+    padding: 1.88vw;
 }
 
 table{
@@ -88,7 +100,6 @@ table{
 }
 
 #result {
-	margin-top: 20px;
 	font-weight: bold;
 }
 
@@ -110,6 +121,14 @@ select{
 	color: #fff;
 	font-weight: bold;
 	cursor: pointer;
+	box-shadow: inset 0 0 0 0;
+	transition:  ease-in 0.4s;
+}
+
+.calculate-button:hover{
+ background-color: #a77e26ea;
+ transform: 100px 0 0 0;
+ box-shadow: inset  #a77e26ea 10vw 0 0 0;
 }
 
 .selected-disabled{
@@ -130,3 +149,4 @@ option{
 .inputfield{
 	font-size: 25px;
 }
+

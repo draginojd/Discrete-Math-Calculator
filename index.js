@@ -53,7 +53,7 @@
     showElementsOfASet.push(set[i].trim());
     }
     
-    document.getElementById("result").innerHTML = "Set name: " + setName + "<br>" + "Elements: " + showElementsOfASet.join(" , ");
+    document.getElementById("result").innerHTML = "Set name: " + "<br>" + setName + "<br>" + "Elements: " + "<br>" + showElementsOfASet.join(" , ") + "<br>" + "All elements that not displayed is not part of this set.";
 
   }
 
