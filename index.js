@@ -1,6 +1,6 @@
   const calculateButton = document.getElementById("calculate-button");
   const operationSelect = document.getElementById("operation");
-  
+
   calculateButton.addEventListener("click", function() {
     const operation = operationSelect.value;
 
@@ -53,7 +53,7 @@
     showElementsOfASet.push(set[i].trim());
     }
     
-    document.getElementById("result").innerHTML = "Set name: " + "<br>" + setName + "<br>" + "Elements: " + "<br>" + showElementsOfASet.join(" , ") + "<br>" + "All elements that not displayed is not part of this set.";
+    document.getElementById("result").innerHTML = "Set name: " + "<br>" + setName + "<br>" + "Elements: " + "<br>" + showElementsOfASet.join(" , ") + "<br>" + "Anything that is not displayed over this text is not an element '∉'  of " + setName;
 
   }
 

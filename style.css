@@ -18,7 +18,7 @@ title{
 	width: 95vw;
 	margin: auto;
     color: white;
-	box-shadow: 0 0px 1vh 0 #e0a930;
+	box-shadow: 0 0px 6vh 0 #e0a930;
     margin-bottom: -10vh;
     
 }
@@ -105,11 +105,25 @@ table{
 
 select{
     cursor: pointer;
-    width: 10vw;
+    width: 17vw;
     height: 3.5vh;
     background-color: black;
     color: white;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	margin-right: 70px;
+	margin-left: -150px;
+}
+
+#operation{
+	background-color: white;
+	color: black;
+}
+
+select#operation option:active{
+	cursor: pointer;
+	background-color: #e0a930;
+	cursor: pointer;
 }
 
 .calculate-button{
@@ -117,7 +131,7 @@ select{
 	margin: 0.7vh;
 	border-radius: 5px;
 	border: none;
-	background-color: #4CAF50;
+	background-color: #e0a930;
 	color: #fff;
 	font-weight: bold;
 	cursor: pointer;
@@ -137,14 +151,7 @@ select{
 	border: 1px black;
 }
 
-#operation{
-	background-color: white;
-	color: black;
-}
 
-option{
-	cursor: pointer;
-}
 
 .inputfield{
 	font-size: 25px;
