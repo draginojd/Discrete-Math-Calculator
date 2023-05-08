@@ -128,6 +128,10 @@ select option:defined { /*Problem: how can I only change the color of the select
 	
 }
 
+.option-main-title{
+ margin-left: 7vw;
+}
+
 .calculate-button{
     padding: 1vw;
 	margin: 0.7vh;
