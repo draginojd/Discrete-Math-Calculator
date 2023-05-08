@@ -122,7 +122,7 @@ select{
 	color: black;
 }
 
-select option:defined {
+select option:defined { /*Problem: how can I only change the color of the selected option */
 	cursor: pointer;
 	background-color: #ffffff;
 	
