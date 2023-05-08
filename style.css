@@ -113,6 +113,7 @@ select{
 	border-top-right-radius: 8px;
 	margin-right: 70px;
 	margin-left: -150px;
+	border-style: none;
 }
 
 #operation{
@@ -120,7 +121,7 @@ select{
 	color: black;
 }
 
-select#operation option:active{
+select#operation option:defined{
 	cursor: pointer;
 	background-color: #e0a930;
 	cursor: pointer;
