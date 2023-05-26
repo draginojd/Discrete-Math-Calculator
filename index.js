@@ -1,45 +1,56 @@
   const calculateButton = document.getElementById("calculate-button");
   const operationSelect = document.getElementById("operation");
+  const h2Element = document.querySelector(".option-main-title");
 
   calculateButton.addEventListener("click", function() {
     const operation = operationSelect.value;
+    console.log("Selected operation: " + operation);
 
     switch (operation) {
       case "show-elements-of-a-set":
-        // Call the function to show elements of a set
-        document.title = "Show elements of a set";
+        h2Element.innerText = "Show Elements of a Set/Is Not a Set";
         showElementsOfASet();
         break;
       case "axiom-of-extension":
-        h2Element.innerText = "Axiom of extension and cardinal number of a set"
+        h2Element.innerText = "Axiom of Extension & Cardinal Number of a Set";
         // Call the function to calculate the axiom of extension and cardinal number of a set
         break;
       case "union":
-        h2Element.innerText = "Union of two sets"
+        h2Element.innerText = "Set Union";
         // Call the function to calculate the union of two sets
         break;
       case "intersection":
+        h2Element.innerText = "Set Intersection";
         // Call the function to calculate the intersection of two sets
         break;
       case "cartesian-product":
-        // Call the function to calculate the Cartesian product of two sets
+        h2Element.innerText = "Cartesian Product";
         calculateCartesianProduct();
         break;
       case "complement":
+        h2Element.innerText = "Set Complement";
         // Call the function to calculate the complement of a set
         break;
       case "permutations":
+        h2Element.innerText = "Permutations";
         // Call the function to calculate permutations
         break;
       case "combinations":
+        h2Element.innerText = "Combinations";
         // Call the function to calculate combinations
         break;
       case "normal":
+        h2Element.innerText = "Calculator";
         // Call the function to perform normal calculator operations
         break;
+      default:
+        h2Element.innerText = "Set Theory";
+        
     }
   });
 
+
+  
 
   function showElementsOfASet() {
     let input = document.getElementById("set").value;
