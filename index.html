@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Cartesian Product Calculator</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Cartesian Product Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-  
-  <div class="cal-form">    
-	  <div class="calculator">
+
+  <div class="cal-form">
+    <div class="calculator">
       <h2 class="option-main-title">Cartesian Product</h2>
-        <select id="operation">
-          <option selected disabled value="set-theory" id="set-theory" class="selected-disabled">Set Theory</option>
-          <option value="show-elements-of-a-set" id="show-elements-of-a-set" class="show-elements-of-a-set">Show elements of a set/is not a set</option>
-          <option value="axiom-of-extension" id="axiom-of-extension">Axiom of extension & Cardinal number of a set</option>
-          <option value="union" id="union">Set Union</option>
-          <option value="intersection" id="intersection">Set Intersection</option>
-          <option value="cartesian-product" id="cartesian-product" class="cartesian-product">Cartesian Product</option>
-          <option value="complement" id="complement">Set Complement</option>
-          <option value="permutations" id="permutations">Permutations</option>
-          <option value="combinations" id="combinations">Combinations</option>
-          <option selected disabled class="selected-disabled">Others</option>
-          <option value="normal"> Calculator</option>
-      </select>   
+      <select id="operation" onchange="changeTitle()">
+        <option selected disabled id="set-theory" class="selected-disabled">Set Theory</option>
+        <option value="show-elements-of-a-set" id="show-elements-of-a-set" class="show-elements-of-a-set">Show elements
+          of a set/is not a set</option>
+        <option value="axiom-of-extension" id="axiom-of-extension">Axiom of extension & Cardinal number of a set
+        </option>
+        <option value="union" id="union">Set Union</option>
+        <option value="intersection" id="intersection">Set Intersection</option>
+        <option value="cartesian-product" id="cartesian-product" class="cartesian-product">Cartesian Product</option>
+        <option value="complement" id="complement">Set Complement</option>
+        <option value="permutations" id="permutations">Permutations</option>
+        <option value="combinations" id="combinations">Combinations</option>
+        <option selected disabled class="selected-disabled">Others</option>
+        <option value="normal">Classic Calculator</option>
+      </select>
 
-		
-		<label for="set">Set:</label>
-    
-		<input type="text" id="set" placeholder="Enter comma-separated values" class="inputfield">
-		<button class="calculate-button" id="calculate-button">Calculate</button>
-		<div id="result"></div>
-	</div>
-</div>
 
-    <table>
-        <tr>
-          <td><button class="button-7" onclick="appendToDisplay('7')">7</button></td>
-          <td><button class="button-8" onclick="appendToDisplay('8')">8</button></td>
-          <td><button class="button-9" onclick="appendToDisplay('9')">9</button></td>
-          <td><button class="button-division" onclick="appendToDisplay('/')">÷</button></td>
-        </tr>
-        <tr>
-          <td><button class="button-4" onclick="appendToDisplay('4')">4</button></td>
-          <td><button class="button-5" onclick="appendToDisplay('5')">5</button></td>
-          <td><button class="button-6" onclick="appendToDisplay('6')">6</button></td>
-          <td><button class="button-star" onclick="appendToDisplay('*')">x</button></td>
-        </tr>
-        <tr>
-          <td><button class="button-1" onclick="appendToDisplay('1')">1</button></td>
-          <td><button class="button-2" onclick="appendToDisplay('2')">2</button></td>
-          <td><button class="button-3" onclick="appendToDisplay('3')">3</button></td>
-          <td><button class="button-minus" onclick="appendToDisplay('-')">-</button></td>
-        </tr>
-        <tr>
-          <td><button class="button-0" onclick="appendToDisplay('0')">0</button></td>
-          <td><button class="button-dot" onclick="appendToDisplay('.')">.</button></td>
-          <td><button class="button-equal" onclick="appendToDisplay('=')" onclick="preformAddition()">=</button></td>
-          <td><button class="button-plus" onclick="appendToDisplay('+')">+</button></td>
-        </tr>
-        <tr>
-          <td colspan="4"><button onclick="clearDisplay()" class="clear-button">Clear</button></td>
-        </tr>
-      </table>
-	<script src="index.js"></script>
+      <label for="set">Set:</label>
+
+      <input type="text" id="set" placeholder="Enter comma-separated values" class="inputfield">
+      <button class="calculate-button" id="calculate-button">Calculate</button>
+      <div id="result"></div>
+    </div>
+
+  </div>
+
+  <table>
+    <tr>
+      <td><button class="button-7" onclick="appendToDisplay('7')">7</button></td>
+      <td><button class="button-8" onclick="appendToDisplay('8')">8</button></td>
+      <td><button class="button-9" onclick="appendToDisplay('9')">9</button></td>
+      <td><button class="button-division" onclick="appendToDisplay('/')">÷</button></td>
+    </tr>
+    <tr>
+      <td><button class="button-4" onclick="appendToDisplay('4')">4</button></td>
+      <td><button class="button-5" onclick="appendToDisplay('5')">5</button></td>
+      <td><button class="button-6" onclick="appendToDisplay('6')">6</button></td>
+      <td><button class="button-star" onclick="appendToDisplay('*')">x</button></td>
+    </tr>
+    <tr>
+      <td><button class="button-1" onclick="appendToDisplay('1')">1</button></td>
+      <td><button class="button-2" onclick="appendToDisplay('2')">2</button></td>
+      <td><button class="button-3" onclick="appendToDisplay('3')">3</button></td>
+      <td><button class="button-minus" onclick="appendToDisplay('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button class="button-0" onclick="appendToDisplay('0')">0</button></td>
+      <td><button class="button-dot" onclick="appendToDisplay('.')">.</button></td>
+      <td><button class="button-equal" onclick="appendToDisplay('=')" onclick="preformAddition()">=</button></td>
+      <td><button class="button-plus" onclick="appendToDisplay('+')">+</button></td>
+    </tr>
+    <tr>
+      <td colspan="4"><button onclick="clearDisplay()" class="clear-button">Clear</button></td>
+    </tr>
+  </table>
+  <script src="index.js"></script>
+
 </body>
+
 </html>

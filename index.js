@@ -2,49 +2,84 @@
   const operationSelect = document.getElementById("operation");
   const h2Element = document.querySelector(".option-main-title");
 
+  function changeTitle(e){
+
+    const operation = operationSelect.value;
+    switch (operation) {
+      case "show-elements-of-a-set":
+        
+        h2Element.innerHTML = "Show Elements of a Set/Is Not a Set";
+        break;
+        
+      case "axiom-of-extension":
+        
+        h2Element.innerHTML = "Axiom of Extension & Cardinal Number of a Set";
+        // Call the function to calculate the axiom of extension and cardinal number of a set
+        break;
+      case "union":
+        h2Element.innerHTML = "Set Union";
+        // Call the function to calculate the union of two sets
+        break;
+      case "intersection":
+        h2Element.innerHTML = "Set Intersection";
+        // Call the function to calculate the intersection of two sets
+        break;
+      case "cartesian-product":
+        h2Element.innerHTML = "Cartesian Product";
+        break;
+      case "complement":
+        h2Element.innerHTML = "Set Complement";
+        // Call the function to calculate the complement of a set
+        break;
+      case "permutations":
+        h2Element.innerHTML = "Permutations";
+        // Call the function to calculate permutations
+        break;
+      case "combinations":
+        h2Element.innerHTML = "Combinations";
+        // Call the function to calculate combinations
+        break;
+      case "normal":
+        h2Element.innerHTML = "Classic Calculator";
+        // Call the function to perform normal calculator operations
+        break;
+      }
+      console.log(e);
+  };
+
   calculateButton.addEventListener("click", function() {
     const operation = operationSelect.value;
     console.log("Selected operation: " + operation);
 
     switch (operation) {
       case "show-elements-of-a-set":
-        h2Element.innerText = "Show Elements of a Set/Is Not a Set";
         showElementsOfASet();
         break;
       case "axiom-of-extension":
-        h2Element.innerText = "Axiom of Extension & Cardinal Number of a Set";
         // Call the function to calculate the axiom of extension and cardinal number of a set
         break;
       case "union":
-        h2Element.innerText = "Set Union";
         // Call the function to calculate the union of two sets
         break;
       case "intersection":
-        h2Element.innerText = "Set Intersection";
         // Call the function to calculate the intersection of two sets
         break;
       case "cartesian-product":
-        h2Element.innerText = "Cartesian Product";
         calculateCartesianProduct();
         break;
       case "complement":
-        h2Element.innerText = "Set Complement";
         // Call the function to calculate the complement of a set
         break;
       case "permutations":
-        h2Element.innerText = "Permutations";
         // Call the function to calculate permutations
         break;
       case "combinations":
-        h2Element.innerText = "Combinations";
         // Call the function to calculate combinations
         break;
       case "normal":
-        h2Element.innerText = "Calculator";
         // Call the function to perform normal calculator operations
         break;
       default:
-        h2Element.innerText = "Set Theory";
         
     }
   });
