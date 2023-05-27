@@ -1,42 +1,46 @@
-body{
-    background-color: black;
+body {
+	background-color: #36363692;
+
 }
 
-title{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5px;
+title {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 5px;
 }
-.cal-form{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #4d4d4da2;
+
+.cal-form {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #4d4d4da2;
 	display: flex;
 	border-radius: 0.5em;
-    
-    align-items: center;
+
+	align-items: center;
 	text-align: center;
-    position: relative;
+	position: relative;
 	width: 95vw;
 	margin: auto;
-    color: white;
-	box-shadow: 0 0px 6vh 0 #e0a930;
-    margin-bottom: -10vh;
-    
+	color: white;
+	box-shadow: 0 0px 2vh 0 #000000;
+	margin-bottom: -10vh;
+	overflow: hidden;
 }
 
 .calculator {
-	box-shadow: 0 0px 5vh 0 rgba(255, 255, 255, 0.432);
-    position: relative;
+	box-shadow: 0 0px 1vh 0 rgba(255, 255, 255, 0.432);
+	position: relative;
 	background-color: #36363692;
 	padding: 0vw;
 	border-radius: 0.5em;
 	text-align: center;
 	width: 100%;
-    height: 45vh;
-	
-    
+	height: 45vh;
+
+
 }
 
-.calculator h2{
+.calculator h2 {
 	margin-top: 2vh;
 }
 
@@ -47,7 +51,7 @@ h2 {
 
 
 input[type=text] {
-    width: 28vw;
+	width: 28vw;
 	height: 18vh;
 	padding: 10px;
 	margin: 5px;
@@ -55,47 +59,88 @@ input[type=text] {
 	border: none;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px #ddd;
+	font-size: 2.5vh;
 }
 
-.button-1,.button-2,.button-3,.button-4,.button-5,.button-6,.button-7,.button-8,.button-9,.button-0,.button-minus,.button-star,.button-equal,.button-dot, .button-plus, .button-division, .clear-button{
-    padding: 2vw;
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-0,
+.button-minus,
+.button-star,
+.button-equal,
+.button-dot,
+.button-plus,
+.button-division,
+.clear-button {
+	padding: 2vw;
 	margin: 1.0vh;
 	border-radius: 5px;
 	border-style: none;
-	background-color: #e0a930; /* green #4CAF50*/
+	background-color: #00BFA5;
+	/* green #4CAF50*/
 	color: #fff;
 	font-weight: bold;
 	cursor: pointer;
-    /*border-style: solid;*/
-    transition: ease-in 0.2s;
-    box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+	/*border-style: solid;*/
+	transition: ease-in 0.2s;
+	box-shadow: inset 0 0 4vh 0 rgb(0, 0, 0);
 }
 
 
-.button-minus:hover,.button-star:hover,.button-equal:hover,.button-dot:hover, .button-plus:hover, .button-division:hover{
-  	transform: 100vw 0px 0px 0px;
+.button-minus:hover,
+.button-star:hover,
+.button-equal:hover,
+.button-dot:hover,
+.button-plus:hover,
+.button-division:hover {
+	transform: 100vw 0px 0px 0px;
 	background-color: #a77e26ea;
 	box-shadow: inset 0 2vh 1vw 0 rgba(255, 255, 255, 0.26);
 
 }
 
-.button-1,.button-2,.button-3,.button-4,.button-5,.button-6,.button-7,.button-8,.button-9,.button-0{
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-0 {
 	transform: 100px 0px 0px 0px;
-	background-color: #b3b0b0;
+	background-color: #808080;
 	box-shadow: inset 0 2vh 1vw 0 rgba(255, 255, 255, 0.26);
-    padding: 1.9vw;
+	padding: 1.9vw;
 }
 
-.button-1:hover,.button-2:hover,.button-3:hover,.button-4:hover,.button-5:hover,.button-6:hover,.button-7:hover,.button-8:hover,.button-9:hover,.button-0:hover{
+.button-1:hover,
+.button-2:hover,
+.button-3:hover,
+.button-4:hover,
+.button-5:hover,
+.button-6:hover,
+.button-7:hover,
+.button-8:hover,
+.button-9:hover,
+.button-0:hover {
 	transform: 100px 0px 0px 0px;
 	background-color: #707070;
 	box-shadow: inset 0 1vh 1vw 0 rgba(255, 255, 255, 0.26);
-    padding: 1.88vw;
+	padding: 1.88vw;
 }
 
-table{
-    margin-top: 10vh;
-    margin-left: 39vw;
+table {
+	margin-top: 10vh;
+	margin-left: 39vw;
 
 }
 
@@ -103,37 +148,38 @@ table{
 	font-weight: bold;
 }
 
-select{
-    cursor: pointer;
-    width: 17vw;
-    height: 3.5vh;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    border-top-left-radius: 8px;
+select {
+	cursor: pointer;
+	width: 17vw;
+	height: 3.5vh;
+	background-color: black;
+	color: rgb(255, 255, 255);
+	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	margin-right: 70px;
 	margin-left: -150px;
 	border-style: none;
-	
+
 }
 
-#operation{
+#operation {
 	background-color: white;
 	color: black;
 }
 
-select option:defined { /*Problem: how can I only change the color of the selected option */
+select option:defined {
+	/*Problem: how can I only change the color of the selected option */
 	cursor: pointer;
 	background-color: #ffffff;
-	
+
 }
 
-.option-main-title{
- margin-left: 7vw;
+.option-main-title {
+	margin-left: 7vw;
 }
 
-.calculate-button{
-    padding: 1vw;
+.calculate-button {
+	padding: 1vw;
 	margin: 0.7vh;
 	border-radius: 5px;
 	border: none;
@@ -142,16 +188,16 @@ select option:defined { /*Problem: how can I only change the color of the select
 	font-weight: bold;
 	cursor: pointer;
 	box-shadow: inset 0 0 0 0;
-	transition:  ease-in 0.4s;
+	transition: ease-in 0.4s;
 }
 
-.calculate-button:hover{
- background-color: #a77e26ea;
- transform: 100px 0 0 0;
- box-shadow: inset  #a77e26ea 10vw 0 0 0;
+.calculate-button:hover {
+	background-color: #a77e26ea;
+	transform: 100px 0 0 0;
+	box-shadow: inset #a77e26ea 10vw 0 0 0;
 }
 
-.selected-disabled{
+.selected-disabled {
 	color: rgba(94, 94, 94, 0.562);
 	font-weight: bolder;
 	border: 1px black;
@@ -159,7 +205,149 @@ select option:defined { /*Problem: how can I only change the color of the select
 
 
 
-.inputfield{
+.input-field {
 	font-size: 25px;
 }
 
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+	/* Styles for small screens */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.cal-form {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	.calculator {
+		display: flex;
+		flex-direction: column;
+		height: 20vh;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		overflow: hidden;
+	}
+
+	.top-left {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		justify-content:left;
+		margin: 0vh;
+		margin-bottom: 3vh;
+	}
+
+	.top-right {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin:0;
+	}
+
+	.calculate-button {
+		width: 13.4vh;
+		height: 6vh;
+		margin: 0;
+		font-size: 1.6vh;
+		border: 2px black solid;
+		overflow: hidden;
+		
+	}
+
+	#operation{
+		background-color: #00BFA5;
+		color: rgb(0, 0, 0);
+		
+		width: 33vh;
+		height: 6vh;
+		margin: 0;
+		text-align: left;
+		
+		word-break: keep-all;
+		font-size: 1.5vh;
+		padding: 0vh;
+		
+		overflow: hidden;
+	}
+
+	
+
+	input[type=text] {
+		width: 100vh;
+		height: 20vh;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	.buttons {
+		margin: 0vh;
+		padding: 0;
+		width: 100%;
+		height: auto;
+
+	}
+
+	td {
+		width: 1%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.button-1,
+	.button-2,
+	.button-3,
+	.button-4,
+	.button-5,
+	.button-6,
+	.button-7,
+	.button-8,
+	.button-9,
+	.button-0,
+	.button-minus,
+	.button-star,
+	.button-equal,
+	.button-dot,
+	.button-plus,
+	.button-division {
+		height: 8vh;
+		width: 18.8vw;
+		margin: 0.1vh;
+		margin-top: 1vh;
+		padding: 0;
+		border: 0.1vh solid rgb(255, 255, 255);
+		font-size: 2vh;
+		box-shadow: black 0.1vh 0vh 1vh 0;
+		border-style: none;
+		border-radius: 50%;
+	}
+
+	.clear-button {
+		height: 9vh;
+		width: 15vh;
+		margin: 0;
+		box-shadow: black 0 0 0.1vh 0;
+		font-size: 2vh;
+	}
+
+.option-main-title{
+	display: none;
+}
+
+#result{
+	font-size: 1.6vh;
+	margin-right: 50vh;
+	margin-bottom: 25vh;
+	color: black;
+}
+
+}
