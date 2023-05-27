@@ -251,6 +251,7 @@ select option:defined {
 		flex-direction: column;
 		height: auto;
 		margin:0;
+		overflow: hidden;
 	}
 
 	.calculate-button {
@@ -286,6 +287,9 @@ select option:defined {
 		height: 20vh;
 		margin-bottom: 0;
 		padding: 0;
+		border-bottom-left-radius:  0;
+		border-bottom-right-radius:  0;
+		margin: 0;
 	}
 
 	.buttons {
@@ -337,6 +341,7 @@ select option:defined {
 		margin: 0;
 		box-shadow: black 0 0 0.1vh 0;
 		font-size: 2vh;
+		margin-top: 3vh;
 	}
 
 .option-main-title{
@@ -344,10 +349,13 @@ select option:defined {
 }
 
 #result{
-	font-size: 1.6vh;
-	margin-right: 50vh;
-	margin-bottom: 25vh;
-	color: black;
+	font-size: 1.5vh;
+	margin: 0;
+	margin-bottom: 0;
+	padding: 3vh;
+	color: rgb(0, 0, 0);
+	background-color: #ffffff;
+	
 }
 
 }
