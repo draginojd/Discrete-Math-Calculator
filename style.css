@@ -309,11 +309,12 @@ select option:defined {
 		border-style: none;
 	}
 
-	td {
+	td, tr {
 		width: 1%;
 		height: 100%;
 		margin: 0;
 		padding: 0;
+		border-style: none;
 	}
 
 	.button-1,
@@ -375,9 +376,9 @@ select option:defined {
 	.button-dot:active,
 	.button-plus:active,
 	.button-division:active {
-transform: 100px 0px 0px 0px;
-	background-color: #ff1f1f;
-	box-shadow: inset 0 1vh 1vw 0 rgba(255, 255, 255, 0.26);
+transform: 300vh 0px 500px 0px;
+	background-color: #999999ab;
+	box-shadow: inset 0 0vh 2vw 0 rgba(0, 0, 0, 0.712);
 	padding: 1.88vw;
 
 	}
