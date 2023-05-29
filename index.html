@@ -45,35 +45,40 @@
 
     
 
-  <table class="buttons">
-    <tr>
-      <td><button class="button-7" onclick="appendToDisplay('7')">7</button></td>
-      <td><button class="button-8" onclick="appendToDisplay('8')">8</button></td>
-      <td><button class="button-9" onclick="appendToDisplay('9')">9</button></td>
-      <td><button class="button-division" onclick="appendToDisplay('/')">÷</button></td>
-    </tr>
-    <tr>
-      <td><button class="button-4" onclick="appendToDisplay('4')">4</button></td>
-      <td><button class="button-5" onclick="appendToDisplay('5')">5</button></td>
-      <td><button class="button-6" onclick="appendToDisplay('6')">6</button></td>
-      <td><button class="button-star" onclick="appendToDisplay('*')">x</button></td>
-    </tr>
-    <tr>
-      <td><button class="button-1" onclick="appendToDisplay('1')">1</button></td>
-      <td><button class="button-2" onclick="appendToDisplay('2')">2</button></td>
-      <td><button class="button-3" onclick="appendToDisplay('3')">3</button></td>
-      <td><button class="button-minus" onclick="appendToDisplay('-')">-</button></td>
-    </tr>
-    <tr>
-      <td><button class="button-0" onclick="appendToDisplay('0')">0</button></td>
-      <td><button class="button-dot" onclick="appendToDisplay('.')">.</button></td>
-      <td><button class="button-equal" onclick="appendToDisplay('=')" onclick="preformAddition()">=</button></td>
-      <td><button class="button-plus" onclick="appendToDisplay('+')">+</button></td>
-    </tr>
-    <tr>
-      <td colspan="4"><button onclick="clearDisplay()" class="clear-button">Clear</button></td>
+  <div class="buttons">
+    <div class="other-buttons">
+      <button onclick="clearDisplay()" class="clear-button">C</button>
+      <button onclick="appendToDisplay('{}')" class="brackets-button">{}</button>
+      <button onclick="appendToDisplay(',')" class="brackets-button">,</button>
+    </div>
+    <div class="button-row">
+      <button class="button-7" onclick="appendToDisplay('7')">7</button></td>
+      <button class="button-8" onclick="appendToDisplay('8')">8</button></td>
+      <button class="button-9" onclick="appendToDisplay('9')">9</button></td>
+      <button class="button-division" onclick="appendToDisplay('/')">÷</button></td>
+    </div>
+    <div class="button-row">
+      <button class="button-4" onclick="appendToDisplay('4')">4</button></td>
+      <button class="button-5" onclick="appendToDisplay('5')">5</button></td>
+      <button class="button-6" onclick="appendToDisplay('6')">6</button></td>
+      <button class="button-star" onclick="appendToDisplay('*')">x</button></td>
+    </div>
+    <div class="button-row">
+      <button class="button-1" onclick="appendToDisplay('1')">1</button></td>
+      <button class="button-2" onclick="appendToDisplay('2')">2</button></td>
+      <button class="button-3" onclick="appendToDisplay('3')">3</button></td>
+      <button class="button-minus" onclick="appendToDisplay('-')">-</button></td>
+    </div>
+    <div class="button-row">
+      <button class="button-0" onclick="appendToDisplay('0')">0</button></td>
+      <button class="button-dot" onclick="appendToDisplay('.')">.</button></td>
+      <button class="button-equal" onclick="appendToDisplay('=')" onclick="preformAddition()">=</button></td>
+      <button class="button-plus" onclick="appendToDisplay('+')">+</button></td>
+    </div>
+    
+   
       
-    </tr>
+    
    
   <script src="index.js"></script>
 
